@@ -1,12 +1,12 @@
-import Image from "next/image";
-import wukong from "/public/wukong.png";
-import vectorNew from "/public/vector.png";
-import vectorNew2 from "/public/vector2.png";
+// import Image from "next/image";
+// import wukong from "/public/wukong.png";
+// import vectorNew from "/public/vector.png";
+// import vectorNew2 from "/public/vector2.png";
 
 function HeroBox1() {
   return (
     <>
-      <div className=" col-span-6">
+      {/* <div className=" col-span-6">
         <div className="hero-box-img text-white  relative ">
           <Image className="object-cover" src={wukong} alt="Wukong image" />
           <Image
@@ -38,7 +38,7 @@ function HeroBox1() {
             <li>ما هي مكالمات الوايفاي؟</li>
           </ul>
         </div>
-      </div>{" "}
+      </div>{" "} */}
     </>
   );
 }
