@@ -203,7 +203,7 @@ export default function Page({}) {
         setSearchTypeDropdownValue={setSearchTypeDropdownValue}
       />
 
-      <SearchPage
+      {/* <SearchPage
         data={newSearchData}
         setBgImg={setBgImg}
         searchDropdownValue={searchTypeDropdownValue}
@@ -234,7 +234,7 @@ export default function Page({}) {
         currentPage={currentPage}
         suggested={suggested}
         shortsTotal={shortsTotal}
-      />
+      /> */}
 
       <Content />
 
