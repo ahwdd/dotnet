@@ -25,7 +25,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-filter-img":
-          "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)",
+          "linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent)",
       },
 
       colors: {
