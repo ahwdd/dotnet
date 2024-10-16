@@ -83,6 +83,18 @@ function LatestNews() {
               <LatestNewsHeader />
               <Image src={arrowtopleft} className="object-cover w-2 h-2" />
             </div>
+
+            <div className="latest-news-posts bg-[#3F3F46] ">
+              <div className="latest-news-post flex items-center p-4 gap-3">
+                <Image src={hero3} className="object-cover w-20 h-20 " />
+                <div className="post-text">
+                  <p>
+                    الألعاب الأولمبية، ذلك الحدث العالمي الذي يترقبه المليارات
+                    كل أربع سنوات، الذي بدأ في إحداث...
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
