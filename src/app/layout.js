@@ -4,6 +4,8 @@ import localFont from "@next/font/local";
 import ThemeProvider from "@/components/ThemeProvider";
 import FaviconIcon from "@/public/favicon.png";
 import { NextUIProvider } from "@nextui-org/react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const metadata = {
   title: "Profile dashboard",
