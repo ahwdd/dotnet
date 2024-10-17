@@ -6,6 +6,7 @@ import postimg from "/public/postimg.png";
 import penVector from "/public/penvector.png";
 import eyeVector from "/public/eyevector.png";
 import ImgFilter from "../hero/ImgFilter";
+import { Skeleton } from "@nextui-org/react";
 
 function LatestNews() {
   return (
