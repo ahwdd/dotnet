@@ -179,7 +179,7 @@ export default function Page({}) {
       />
       <ToasterComponent />
       {/* blurred background background */}
-      <div className="absolute inset-0 w-full h-[70vh] animate-hue-change">
+      {/* <div className="absolute inset-0 w-full h-[70vh] animate-hue-change">
         <div
           className="size-full bg-cover bg-no-repeat animate-background-transition"
           style={{
@@ -188,7 +188,7 @@ export default function Page({}) {
           }}
         ></div>
       </div>
-      <div className="absolute inset-0 w-full h-1/2 bg-gradient-to-b from-white/5 to-white via-white via-[70vh] dark:via-black dark:from-black/5 dark:to-black" />
+      <div className="absolute inset-0 w-full h-1/2 bg-gradient-to-b from-white/5 to-white via-white via-[70vh] dark:via-black dark:from-black/5 dark:to-black" /> */}
 
       <AppBar
         shadow="transparent"
