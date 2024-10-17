@@ -13,7 +13,6 @@ export default function SliderHow() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    rtl: true,
     initialSlide: 2, // put the length-1 inversed later
   };
   return (
@@ -22,15 +21,27 @@ export default function SliderHow() {
       <Image src={HowSectionBg} className="object-cover absolute top-0" />
 
       <Slider {...settings}>
-        <div className="min-h-[279px] !flex gap-10 justify-center items-center w-full bg-red-500">
-          <div className="">
-            <Image src={appleicon} className="object-cover" />
-          </div>
-          <div className="">
-            <Image src={appleicon} className="object-cover" />
-          </div>
-          <div className="">
-            <Image src={appleicon} className="object-cover" />
+        <div className="min-h-[279px] !flex gap-10 justify-center items-center w-full ">
+          <div className="flex">
+            <div>
+              <h3 className="w-fit">طريقة اعادة ضبط المصنع للآيفون</h3>
+              <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
+            </div>
+            <Image src={appleicon} className="object-cover" alt="apple icon" />
+          </div>{" "}
+          <div className="flex">
+            <div>
+              <h3>طريقة اعادة ضبط المصنع للآيفون</h3>
+              <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
+            </div>
+            <Image src={appleicon} className="object-cover" alt="apple icon" />
+          </div>{" "}
+          <div className="flex">
+            <div>
+              <h3>طريقة اعادة ضبط المصنع للآيفون</h3>
+              <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
+            </div>
+            <Image src={appleicon} className="object-cover" alt="apple icon" />
           </div>
         </div>
 
