@@ -6,9 +6,6 @@ import penVector from "/public/penvector.png";
 import eyeVector from "/public/eyevector.png";
 import ImgFilter from "../hero/ImgFilter";
 import { latestNews_articles_reviews, latestNews_news } from "../contentData";
-
-import { Skeleton } from "@nextui-org/react";
-
 function LatestNews() {
   return (
     <>
