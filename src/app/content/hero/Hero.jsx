@@ -12,7 +12,7 @@ function Hero() {
       <div className="w-1/2 h-screen bg-black relative">
         <div className="text-white bg-red-500 relative ">
           <Image
-            className="object-cover h-[365px] "
+            className="object-cover w-full h-[365px] "
             src={wukong}
             alt="Wukong image"
           />
