@@ -5,6 +5,7 @@ import TopTrending from "./top_trending/topTrending";
 import SliderHow from "./SliderHow/SliderHow";
 import SeeLater from "./see_later/SeeLater";
 import Try from "./Try";
+import LiveProdcast from "./live_prodcast/LiveProdcast";
 
 function Page() {
   return (
@@ -17,6 +18,7 @@ function Page() {
       <LatestNews />
       {/* <TopTrending /> */}
       <SliderHow />
+      <LiveProdcast />
     </div>
   );
 }
