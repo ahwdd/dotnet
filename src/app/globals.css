@@ -496,7 +496,7 @@ nav > header {
 
 .top-trending-content {
   display: inline-block;
-  animation: 3s slide infinite linear;
+  animation: 3s slide infinite linear forwards;
 }
 /* 
 .logos-slide img {
