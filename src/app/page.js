@@ -1,11 +1,7 @@
-
 // import { useRouter } from 'next/navigation';
-import Welcome from "@/components/home";
+
+// import SliderHow from "./content/SliderHow/SliderHow";
 
 export default function Home() {
-  return(
-    <>
-    <Welcome />
-    </>
-  )
+  return <>{/* <SliderHow /> */}</>;
 }

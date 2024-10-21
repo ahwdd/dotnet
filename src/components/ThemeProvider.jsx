@@ -1,6 +1,6 @@
-"use client"
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { useEffect, useState } from 'react';
+"use client";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { useEffect, useState } from "react";
 
 const ThemeProvider = ({ children }) => {
   const [mounted, setMounted] = useState(false);
@@ -11,11 +11,9 @@ const ThemeProvider = ({ children }) => {
 
   if (!mounted) return null;
 
-  return (<NextThemesProvider attribute="class">
-      {children}
-    </NextThemesProvider>);
-
+  return (
+    <NextThemesProvider attribute="class"> {children} </NextThemesProvider>
+  );
 };
-
 
 export default ThemeProvider;
