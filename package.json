@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/react-slick": "^1.1.2",
     "@next/font": "^14.2.4",
     "@nextui-org/react": "^2.4.6",
     "@popperjs/core": "^2.11.8",

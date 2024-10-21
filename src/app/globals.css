@@ -503,3 +503,24 @@ nav > header {
   height: 50px;
   margin: 0 40px;
 } */
+
+.slider-how .slick-dots {
+  top: -50px;
+  left: 30px;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.slider-how .slick-dots li.slick-active button:before {
+  color: #fff !important;
+  font-size: 10px !important;
+}
+
+.slider-how .slick-dots li {
+  margin: 0 -2px;
+}
+
+.slider-how .slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: #ffffff44 !important;
+}
