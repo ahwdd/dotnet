@@ -538,3 +538,36 @@ nav > header {
 }
 
 /* Embla Slider  */
+
+/* ReadMoreSlider */
+
+.one-time-repeat {
+  direction: ltr;
+  overflow: hidden;
+  position: relative;
+}
+.first-text {
+  transition: all 0.4s linear;
+  opacity: 1;
+}
+
+.second-text {
+  transition: all 0.4s linear;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 50%;
+}
+
+.one-time-repeat:hover .first-text {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.one-time-repeat:hover .second-text {
+  padding-top: 30px;
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+/* ReadMoreSlider */
