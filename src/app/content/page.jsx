@@ -6,6 +6,7 @@ import SliderHow from "./SliderHow/SliderHow";
 import SeeLater from "./see_later/SeeLater";
 import Try from "./Try";
 import LiveProdcast from "./live_prodcast/LiveProdcast";
+import SummerSale from "./summer_sale/SummerSale";
 
 function Page() {
   return (
@@ -19,6 +20,7 @@ function Page() {
       {/* <TopTrending /> */}
       <SliderHow />
       <LiveProdcast />
+      <SummerSale />
     </div>
   );
 }

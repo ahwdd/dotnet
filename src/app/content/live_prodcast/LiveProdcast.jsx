@@ -42,14 +42,14 @@ function LiveProdcast() {
       setButtonIndex((prevIndex) =>
         prevIndex >= arr.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 4000);
 
     // Clear the interval on component unmount
     return () => clearInterval(intervalId);
   }, [arr.length]); // Depend on arr.length instead of buttonIndex
 
   return (
-    <div className="live-prodcast h-[500px] mx-10  relative">
+    <div className="live-prodcast h-[600px] mb-2 mx-10  relative overflow-hidden">
       <div
         className="h-full w-full " // Fallback color
         // style={{
@@ -62,6 +62,7 @@ function LiveProdcast() {
         <Image
           src={images[buttonIndex]}
           className="object-cover w-full z-0 absolute left-0 right-0 "
+          alt="background"
         />
         {/* Optional loading state or content */}
         <div className="filter relative h-full bg-gradient-filter-img-top w-full ">
