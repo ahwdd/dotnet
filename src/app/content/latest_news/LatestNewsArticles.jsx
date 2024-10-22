@@ -31,7 +31,7 @@ function LatestNewsArticles() {
           {latestNews_articles_reviews.map((e, i) => (
             <div
               key={i}
-              className="post border-solid border-b  flex bg-gray-800 p-5 gap-3"
+              className="post border-solid border-b border-gray-700  flex bg-gray-800 p-5 gap-3"
             >
               <Image
                 className="object-cover w-20 border h-20"
