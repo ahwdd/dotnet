@@ -3,6 +3,10 @@
 import { useEffect, useState } from "react";
 import ImgFilter from "../hero/ImgFilter";
 import Button from "./Button";
+import Image from "next/image";
+import berlinImg from "/public/berlin.png";
+import londonImg from "/public/london.webp";
+const images = [berlinImg, londonImg, berlinImg, londonImg, berlinImg];
 
 const arr = [1, 2, 3, 4, 5];
 const data = [
@@ -33,18 +37,36 @@ function LiveProdcast() {
   //   setButtonIndex(index);
   // }, []);
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setButtonIndex((prevIndex) =>
+        prevIndex >= arr.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    // Clear the interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [arr.length]); // Depend on arr.length instead of buttonIndex
+
   return (
-    <div className="live-prodcast h-[500px] mx-10">
+    <div className="live-prodcast h-[500px] mx-10  relative">
       <div
-        className="h-full"
-        style={{
-          background: "url('/berlin.png') center center no-repeat",
-          backgroundSize: "cover",
-        }}
+        className="h-full w-full " // Fallback color
+        // style={{
+        //   background: images[buttonIndex]
+        //     ? `url(${images[buttonIndex]}) center center no-repeat`
+        //     : "none",
+        //   backgroundSize: "cover",
+        // }}
       >
-        <div className="filter h-full bg-gradient-filter-img-top f">
+        <Image
+          src={images[buttonIndex]}
+          className="object-cover w-full z-0 absolute left-0 right-0 "
+        />
+        {/* Optional loading state or content */}
+        <div className="filter relative h-full bg-gradient-filter-img-top w-full ">
           <div className="header flex justify-between p-7">
-            <p className="text-red-500 underline flex items-center gap-2">
+            <p className="text-red-500 underline flex items-center relative gap-2">
               <button className="relative w-4 h-4 rounded-full mt-1 border-solid border-white border after:content-[''] after:block after:w-3 after:h-3 after:bg-red-500 after:absolute after:top-1/2 after:left-1/2 after:rounded-full after:-translate-x-1/2 after:-translate-y-1/2"></button>
               تغطية مباشرة
             </p>
@@ -55,15 +77,15 @@ function LiveProdcast() {
 
           <p>{/* Hello ID : <Button id={buttonIndex} /> */}</p>
 
-          <div className="buttons-navigation mx-16 ">
+          <div className="buttons-navigation mx-16 relative ">
             <h3 className="mb-10 text-4xl font-bold">
               تغطيتنا لمعرض IFA المانيا برلين
             </h3>
             <div className="buttons-container flex flex-col gap-7 relative w-fit ">
-              <div className="border-dotted border-1 h-full absolute right-1/2 z-0">
+              <div className="border-dotted border-1 h-full absolute right-1/2 ">
                 {/* dotted element */}
               </div>
-              {arr.map((e, i) => (
+              {arr.map((_, i) => (
                 <button
                   onClick={() => {
                     setButtonIndex(i);
