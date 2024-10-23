@@ -23,7 +23,7 @@ function LatestNews() {
                 <Image src={arrowtopleft} className="object-cover w-2 h-2" />
               </div>
 
-              <div className="flex flex-col items-center justify-center gap-5 h-full pt-5">
+              <div className="flex flex-col items-center justify-between gap-5 h-full pt-5">
                 {latestNews_news.map((e, i) => (
                   <div key={i} className="latest-news-posts flex">
                     <div className="latest-news-post flex items-center px-4 gap-3">

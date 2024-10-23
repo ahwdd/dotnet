@@ -26,7 +26,7 @@ function SwiperSlider() {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className="min-h-[279px] !flex gap-10 justify-center items-center w-full ">
             <section className="flex">
               <section>
@@ -62,11 +62,10 @@ function SwiperSlider() {
               />
             </section>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
-        ...
       </Swiper>
     </div>
   );

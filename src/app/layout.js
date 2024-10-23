@@ -7,6 +7,8 @@ import { NextUIProvider } from "@nextui-org/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "swiper/css/bundle";
+import Appbar from "@/components/appbar";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Profile dashboard",
@@ -43,7 +45,11 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="rtl">
       <body className={`${helv.variable} font-sans`}>
         <ThemeProvider>
-          <NextUIProvider>{children}</NextUIProvider>
+          <NextUIProvider>
+            <Appbar />
+            <main>{children}</main>
+            <Footer />
+          </NextUIProvider>
         </ThemeProvider>
       </body>
     </html>
