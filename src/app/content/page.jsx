@@ -8,12 +8,15 @@ import Try from "./Try";
 import LiveProdcast from "./live_prodcast/LiveProdcast";
 import SummerSale from "./summer_sale/SummerSale";
 import ReadMoreSlider from "./readmore_slider/ReadMoreSlider";
+import SwiperSlider from "./swiper_slider/SwiperSlider";
 
 function Page() {
   return (
     <div className="border-2 flex-col flex gap-20 text-black dark:text-white relative top-0 mt-[110px] overflow-hidden">
       {/* <TopTrending />
       <Try /> */}
+
+      <SwiperSlider />
 
       <Hero />
       <SeeLater />
