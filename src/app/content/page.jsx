@@ -1,14 +1,9 @@
 import Hero from "./hero/Hero";
-import HeroSectionContent from "./HeroSectionContent";
 import LatestNews from "./latest_news/LatestNews";
-import TopTrending from "./top_trending/topTrending";
 import SliderHow from "./SliderHow/SliderHow";
 import SeeLater from "./see_later/SeeLater";
-import Try from "./Try";
-import LiveProdcast from "./live_prodcast/LiveProdcast";
 import SummerSale from "./summer_sale/SummerSale";
 import ReadMoreSlider from "./readmore_slider/ReadMoreSlider";
-import SwiperSlider from "./swiper_slider/SwiperSlider";
 
 function Content() {
   return (
