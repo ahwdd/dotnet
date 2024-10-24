@@ -26,6 +26,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-filter-img":
           "linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent)",
+        "gradient-filter-img-top":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent)",
+        "gradient-filter-img-right":
+          "linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent)",
       },
 
       colors: {
@@ -253,6 +257,7 @@ module.exports = {
             forth: "#737373",
             fifth: "#9747FF",
             sixth: "#00A79D",
+            sixth50: "hsl(175.66deg 91.21% 17.84%)",
           },
         },
         dark: {

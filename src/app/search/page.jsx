@@ -63,108 +63,108 @@ export default function Page({}) {
   const [dailyNews, setDailyNews] = useState(null);
   const [rates, setRates] = useState(null);
 
-  useEffect(() => {
-    setIsMounted(true);
+  // useEffect(() => {
+  //   setIsMounted(true);
 
-    if (isMounted) {
-      checkLocation({ setLocation, location, setWeather, toast });
-      getTrendingData({ setTrendingData, toast });
-      getDailyNews({ setDailyNews, toast });
-      // getNewestShorts({ setStatusData, toast })
-      getRates({ c: currencyValue, setRates, toast, rates });
-    }
-  }, [isMounted]);
-  // console.log('statusData', statusData)
+  //   if (isMounted) {
+  //     checkLocation({ setLocation, location, setWeather, toast });
+  //     getTrendingData({ setTrendingData, toast });
+  //     getDailyNews({ setDailyNews, toast });
+  //     // getNewestShorts({ setStatusData, toast })
+  //     getRates({ c: currencyValue, setRates, toast, rates });
+  //   }
+  // }, [isMounted]);
+  // // console.log('statusData', statusData)
 
-  useEffect(() => {
-    setIsMounted(true);
-    document.title = `البحث عن: ${searchValue ?? ""}`;
-    if (searchValue != null) {
-      // console.log('searchValue', searchValue)
-      setIsLoading(true);
-      getfetchedData({
-        searchValue,
-        perPage,
-        currentPage,
-        setFechedData,
-        setNewSearchData,
-        setStatusData,
-        setShortsTotal,
-        setTotalPages,
-        setHasMore,
-        setTotalAvailable,
-        setSuggested,
-        setIsLoading,
-        toast,
-        searchData,
-        newSearchData,
-      });
-    }
-  }, [currentPage]);
+  // useEffect(() => {
+  //   setIsMounted(true);
+  //   document.title = `البحث عن: ${searchValue ?? ""}`;
+  //   if (searchValue != null) {
+  //     // console.log('searchValue', searchValue)
+  //     setIsLoading(true);
+  //     getfetchedData({
+  //       searchValue,
+  //       perPage,
+  //       currentPage,
+  //       setFechedData,
+  //       setNewSearchData,
+  //       setStatusData,
+  //       setShortsTotal,
+  //       setTotalPages,
+  //       setHasMore,
+  //       setTotalAvailable,
+  //       setSuggested,
+  //       setIsLoading,
+  //       toast,
+  //       searchData,
+  //       newSearchData,
+  //     });
+  //   }
+  // }, [currentPage]);
 
-  useEffect(() => {
-    document.title = `البحث عن: ${searchValue ?? ""}`;
-    setSearchCachValue(searchValue);
-    if (searchValue != null && searchValue == initialSearchValue) {
-      setIsLoading(true);
-      getfetchedData({
-        searchValue,
-        perPage,
-        currentPage,
-        setFechedData,
-        setNewSearchData,
-        setStatusData,
-        setShortsTotal,
-        setTotalPages,
-        setHasMore,
-        setTotalAvailable,
-        setSuggested,
-        setIsLoading,
-        toast,
-        searchData,
-        newSearchData,
-      });
-    } else if (searchValue != initialSearchValue) {
-      const newLoc = `/search?s=${searchValue}&for=${
-        searchTypeDropdownValue ?? ""
-      }`;
-      history.replaceState(null, "", newLoc);
-      window.location.reload();
-      console.log("newLoc", newLoc);
-    }
-  }, [searchValue]);
+  // useEffect(() => {
+  //   document.title = `البحث عن: ${searchValue ?? ""}`;
+  //   setSearchCachValue(searchValue);
+  //   if (searchValue != null && searchValue == initialSearchValue) {
+  //     setIsLoading(true);
+  //     getfetchedData({
+  //       searchValue,
+  //       perPage,
+  //       currentPage,
+  //       setFechedData,
+  //       setNewSearchData,
+  //       setStatusData,
+  //       setShortsTotal,
+  //       setTotalPages,
+  //       setHasMore,
+  //       setTotalAvailable,
+  //       setSuggested,
+  //       setIsLoading,
+  //       toast,
+  //       searchData,
+  //       newSearchData,
+  //     });
+  //   } else if (searchValue != initialSearchValue) {
+  //     const newLoc = `/search?s=${searchValue}&for=${
+  //       searchTypeDropdownValue ?? ""
+  //     }`;
+  //     history.replaceState(null, "", newLoc);
+  //     window.location.reload();
+  //     console.log("newLoc", newLoc);
+  //   }
+  // }, [searchValue]);
 
-  useEffect(() => {
-    console.log(
-      searchCachValue != initialSearchValue,
-      searchCachValue,
-      initialSearchValue
-    );
-    if (searchCachValue && searchCachValue != initialSearchValue) {
-      const newLoc = `/search?s=${searchCachValue}&for=${
-        searchTypeDropdownValue ?? ""
-      }`;
-      router.replace(newLoc);
-      console.log("newLoc", newLoc);
-    }
-  }, [searchTypeDropdownValue]);
+  // useEffect(() => {
+  //   console.log(
+  //     searchCachValue != initialSearchValue,
+  //     searchCachValue,
+  //     initialSearchValue
+  //   );
+  //   if (searchCachValue && searchCachValue != initialSearchValue) {
+  //     const newLoc = `/search?s=${searchCachValue}&for=${
+  //       searchTypeDropdownValue ?? ""
+  //     }`;
+  //     router.replace(newLoc);
+  //     console.log("newLoc", newLoc);
+  //   }
+  // }, [searchTypeDropdownValue]);
 
-  useEffect(() => {
-    if (isMounted) {
-      getRates({ c: currencyValue, setRates, toast });
-    }
-  }, [currencyValue, isMounted]);
+  // useEffect(() => {
+  //   if (isMounted) {
+  //     getRates({ c: currencyValue, setRates, toast });
+  //   }
+  // }, [currencyValue, isMounted]);
 
-  useEffect(() => {
-    if (location && location.latitude && location.longitude) {
-      getTempData({
-        latitude: location.latitude,
-        longitude: location.longitude,
-        setWeather,
-        toast,
-      });
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   if (location && location.latitude && location.longitude) {
+  //     getTempData({
+  //       latitude: location.latitude,
+  //       longitude: location.longitude,
+  //       setWeather,
+  //       toast,
+  //     });
+  //   }
+  // }, [location]);
   // console.log('total', totalAvailable)
 
   return (

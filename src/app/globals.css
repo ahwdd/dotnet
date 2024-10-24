@@ -496,10 +496,111 @@ nav > header {
 
 .top-trending-content {
   display: inline-block;
-  animation: 3s slide infinite linear;
+  animation: 3s slide infinite linear forwards;
 }
 /* 
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
 } */
+
+/* Slider how */
+
+.slider-how {
+  position: relative;
+}
+
+.slider-how .swiper-pagination {
+  margin-top: 10px;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100px !important;
+  height: fit-content !important;
+}
+
+.slider-how .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+.slider-how .swiper-pagination-bullet-active {
+  background-color: #fff;
+  color: #fff;
+  width: 12px !important;
+  height: 12px !important;
+}
+/* Slider how */
+
+/* Embla slider  */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* Embla Slider  */
+
+/* ReadMoreSlider */
+
+.one-time-repeat {
+  position: relative;
+  overflow: visible;
+  padding-top: 50px;
+}
+.first-text {
+  transition: all 0.5s linear;
+  opacity: 1;
+}
+
+.second-text {
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 50%;
+}
+
+/* .one-time-repeat:hover .first-text {
+  transform: translateY(-100%);
+  opacity: 0;
+} */
+
+.one-time-repeat:hover .second-text {
+  padding-top: 50px;
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+.one-time-repeat .third-text {
+  opacity: 0;
+  transition: all 0.2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.one-time-repeat:hover .third-text {
+  opacity: 1;
+}
+
+.slider-piece {
+  transition: all 0.5s linear;
+}
+
+.read-more-carousel .swiper-pagination {
+  position: absolute !important;
+  top: 0px !important;
+  left: 0 !important;
+  background-color: #f90;
+  border: 1px solid #fff !important;
+  height: fit-content !important;
+  width: 200px !important;
+  z-index: 100 !important;
+}
+
+/* ReadMoreSlider */
