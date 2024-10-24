@@ -24,7 +24,7 @@ function Content() {
       {/* <TopTrending /> */}
       <SliderHow />
       <ReadMoreSlider />
-      <LiveProdcast />
+      {/* <LiveProdcast /> */}
       <SummerSale />
     </div>
   );
