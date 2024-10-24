@@ -16,17 +16,17 @@ function LatestNews() {
           {/* Second section */}
           {/* Same as the top one , looping later */}
 
-          <div className="  bg-[#3F3F46] ">
-            <div className="">
-              <div className="header bg-black flex justify-between items-center py-2 px-4">
+          <div className="   ">
+            <div className="h-full">
+              <div className="header  flex justify-between items-center py-2 px-4">
                 <LatestNewsHeader />
                 <Image src={arrowtopleft} className="object-cover w-2 h-2" />
               </div>
 
-              <div className="flex flex-col items-center justify-between gap-5 h-full pt-5">
+              <div className="flex bg-[#3F3F46] flex-col items-center justify-between  h-[788px]">
                 {latestNews_news.map((e, i) => (
-                  <div key={i} className="latest-news-posts flex">
-                    <div className="latest-news-post flex items-center px-4 gap-3">
+                  <div key={i} className="latest-news-posts flex-1  pt-5">
+                    <div className="latest-news-post flex items-center  gap-3">
                       <Image
                         src={e.postimg}
                         className="object-cover w-20 h-20"

@@ -544,6 +544,7 @@ nav > header {
 .one-time-repeat {
   position: relative;
   overflow: visible;
+  padding-top: 50px;
 }
 .first-text {
   transition: all 0.5s linear;
@@ -585,21 +586,15 @@ nav > header {
   transition: all 0.5s linear;
 }
 
-/* .read-more-carousel .swiper-initialized {
-  overflow-y: visible !important;
-  overflow-x: visible !important;
-} */
-
 .read-more-carousel .swiper-pagination {
   position: absolute !important;
-  top: -15px !important;
+  top: 0px !important;
   left: 0 !important;
   background-color: #f90;
   border: 1px solid #fff !important;
   height: fit-content !important;
   width: 200px !important;
   z-index: 100 !important;
-  display: none !important;
 }
 
 /* ReadMoreSlider */

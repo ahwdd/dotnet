@@ -54,13 +54,13 @@ export const latestNews_articles_reviews = [
 ];
 
 export const latestNews_news = [
-  {
-    postimg,
-    postDesc:
-      "حدث IFA 24: انتل تستعرض Lunar Lake، معماريتها الأكثر توفيرًا للطاقة.",
-    date: "يومان",
-    writtenBy: "مصطفي يسري",
-  },
+  // {
+  //   postimg,
+  //   postDesc:
+  //     "حدث IFA 24: انتل تستعرض Lunar Lake، معماريتها الأكثر توفيرًا للطاقة.",
+  //   date: "يومان",
+  //   writtenBy: "مصطفي يسري",
+  // },
 
   {
     postimg,
