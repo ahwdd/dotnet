@@ -27,7 +27,7 @@ function SwiperSlider() {
       >
         <SwiperSlide>
           <div className="min-h-[279px]  !flex gap-10 justify-center items-center w-full ">
-            <section className="flex py-10 px-5 border-l-2 border-solid ">
+            <section className="flex py-10 px-5 border-l-2 border-solid border-[#FFFFFF80]">
               <Image
                 src={appleicon}
                 className="object-cover"
@@ -38,7 +38,7 @@ function SwiperSlider() {
                 <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
               </section>
             </section>{" "}
-            <section className="flex">
+            <section className="flex py-10 px-5 border-l-2 border-solid border-[#FFFFFF80]">
               <Image
                 src={appleicon}
                 className="object-cover"
@@ -63,47 +63,10 @@ function SwiperSlider() {
             </section>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <div className="min-h-[279px] !flex gap-10 justify-center items-center w-full ">
-            <section className="flex">
-              <Image
-                src={appleicon}
-                className="object-cover"
-                alt="apple icon"
-              />
-              <section>
-                <h3 className="w-fit">طريقة اعادة ضبط المصنع للآيفون</h3>
-                <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
-              </section>
-            </section>{" "}
-            <section className="flex">
-              <Image
-                src={appleicon}
-                className="object-cover"
-                alt="apple icon"
-              />
-              <section>
-                <h3>طريقة اعادة ضبط المصنع للآيفون</h3>
-                <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
-              </section>
-            </section>
-            <section className="flex">
-              <Image
-                src={appleicon}
-                className="object-cover"
-                alt="apple icon"
-              />
 
-              <section>
-                <h3>طريقة اعادة ضبط المصنع للآيفون</h3>
-                <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
-              </section>
-            </section>
-          </div>
-        </SwiperSlide>
         <SwiperSlide>
-          <div className="min-h-[279px] !flex gap-10 justify-center items-center w-full ">
-            <section className="flex">
+          <div className="min-h-[279px]  !flex gap-10 justify-center items-center w-full ">
+            <section className="flex py-10 px-5 border-l-2 border-solid border-[#FFFFFF80]">
               <Image
                 src={appleicon}
                 className="object-cover"
@@ -114,7 +77,7 @@ function SwiperSlider() {
                 <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
               </section>
             </section>{" "}
-            <section className="flex">
+            <section className="flex py-10 px-5 border-l-2 border-solid border-[#FFFFFF80]">
               <Image
                 src={appleicon}
                 className="object-cover"
@@ -138,7 +101,46 @@ function SwiperSlider() {
               </section>
             </section>
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="min-h-[279px]  !flex gap-10 justify-center items-center w-full ">
+            <section className="flex py-10 px-5 border-l-2 border-solid border-[#FFFFFF80]">
+              <Image
+                src={appleicon}
+                className="object-cover"
+                alt="apple icon"
+              />
+              <section>
+                <h3 className="w-fit">طريقة اعادة ضبط المصنع للآيفون</h3>
+                <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
+              </section>
+            </section>{" "}
+            <section className="flex py-10 px-5 border-l-2 border-solid border-[#FFFFFF80]">
+              <Image
+                src={appleicon}
+                className="object-cover"
+                alt="apple icon"
+              />
+              <section>
+                <h3>طريقة اعادة ضبط المصنع للآيفون</h3>
+                <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
+              </section>
+            </section>
+            <section className="flex">
+              <Image
+                src={appleicon}
+                className="object-cover"
+                alt="apple icon"
+              />
+
+              <section>
+                <h3>طريقة اعادة ضبط المصنع للآيفون</h3>
+                <p>تعلم اسهل طريقة لإعادة ضبط المصنع لجهازك الآيفون</p>
+              </section>
+            </section>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );

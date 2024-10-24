@@ -504,26 +504,32 @@ nav > header {
   margin: 0 40px;
 } */
 
-.slider-how .slick-dots {
-  top: -50px;
-  left: 30px;
-  width: fit-content !important;
+/* Slider how */
+
+.slider-how {
+  position: relative;
+}
+
+.slider-how .swiper-pagination {
+  margin-top: 10px;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100px !important;
   height: fit-content !important;
 }
 
-.slider-how .slick-dots li.slick-active button:before {
-  color: #fff !important;
-  font-size: 10px !important;
+.slider-how .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
 }
-
-.slider-how .slick-dots li {
-  margin: 0 -2px;
+.slider-how .swiper-pagination-bullet-active {
+  background-color: #fff;
+  color: #fff;
+  width: 12px !important;
+  height: 12px !important;
 }
-
-.slider-how .slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  color: #ffffff44 !important;
-}
+/* Slider how */
 
 /* Embla slider  */
 .embla {

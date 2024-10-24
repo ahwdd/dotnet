@@ -15,8 +15,8 @@ function Content() {
     <div className="border-2 flex-col flex gap-20 text-black dark:text-white relative top-0 mt-[110px] overflow-hidden">
       {/* <TopTrending />
       <Try /> */}
-
-      <SwiperSlider />
+      {/* 
+      <SwiperSlider /> */}
 
       <Hero />
       <SeeLater />
