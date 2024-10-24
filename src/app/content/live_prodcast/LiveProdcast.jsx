@@ -88,6 +88,7 @@ function LiveProdcast() {
               </div>
               {arr.map((_, i) => (
                 <button
+                  key={i}
                   onClick={() => {
                     setButtonIndex(i);
                   }}
