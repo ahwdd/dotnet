@@ -40,7 +40,7 @@ function MostWatched() {
 
       <div className="flex flex-col gap-10 items-center justify-center">
         {mostWatchedData.map((e, i) => (
-          <div className="flex gap-3">
+          <div key={i} className="flex gap-3">
             <div className="flex items-center justify-center text-3xl">
               {i + 1}
             </div>
