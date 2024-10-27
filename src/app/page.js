@@ -1,14 +1,11 @@
-// import { useRouter } from 'next/navigation';
-
-import Content from "./content/page";
-
-// import SliderHow from "./content/SliderHow/SliderHow";
+import { Button } from "@nextui-org/react";
+import Image from "next/image";
+import HomePage from "./home/page";
 
 export default function Home() {
   return (
     <>
-      {/* <SliderHow /> */}
-      <Content />
+      <HomePage />
     </>
   );
 }
