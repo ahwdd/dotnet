@@ -1,6 +1,7 @@
 import Image from "next/image";
 import hero3 from "/public/hero/hero3.png";
 import GradientFilter from "../GradientFilter/GradientFilter";
+import HeroText from "./HeroText";
 
 function Hero3() {
   return (

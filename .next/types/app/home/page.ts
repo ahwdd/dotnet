@@ -1,4 +1,4 @@
-// File: C:\Users\ogama\Desktop\dotnet-revamp\src\app\home\page.jsx
+// File: C:\Users\ogama\Desktop\dotnet\src\app\home\page.jsx
 import * as entry from '../../../../src/app/home/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,4 +1,4 @@
-// File: C:\Users\ogama\Desktop\dotnet-revamp\src\app\layout.js
+// File: C:\Users\ogama\Desktop\dotnet\src\app\layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
